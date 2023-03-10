@@ -15,7 +15,7 @@ So why wait? Come visit us today and experience the best tea and donuts Bergen h
 ![image](https://user-images.githubusercontent.com/43397999/224358962-ba8e9ab5-bc65-41da-9991-b4d1ba0e5c3d.png)
 
 ## Try out the website here yourself
-[insert link]
+https://bergenteashop.netlify.app/
 
 ### Got an opinion?
 Feel free to contact me at parkzen68@gmail.com and let me know you think!
