@@ -1,0 +1,301 @@
+html {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+header {
+  width: auto;
+  top: 0;
+  left: 0;
+  height: 68px;
+  position: relative;
+  /* border-bottom: 1px solid seashell; */
+  /* display: inline-flex; */
+}
+
+header nav {
+  text-align: right;
+  padding-right: 10px;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  left: 0;
+}
+
+header nav a {
+  text-decoration: underline;
+  color: white;
+  padding-left: 15px;
+}
+
+@media (max-width: 619px) {
+  header nav a {
+    font-size: smaller;
+  }
+}
+
+
+.header-ul {
+  background-color: black;
+  padding-left: 10px;
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.header-ul li {
+  display: flex;
+  justify-content: flex-end;
+}
+
+body {
+  width: auto;
+  margin: 0;
+}
+
+body .white-border {
+  border-bottom: 1px solid seashell;
+  width: auto;
+  padding: 0%;
+  margin: 0%;
+}
+
+body h2,
+h4 {
+  text-align: center;
+}
+
+.container-our-mission {
+  width: auto;
+  height: 700px;
+  background-image: url(../images/img-mission-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.container-our-mission p {
+  background-color: black;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0.75;
+}
+
+.container-our-mission p:hover {
+  opacity: 1;
+  background-color: black;
+  color: white;
+  font-size: larger;
+}
+
+.container-our-mission p .mission {
+  font-size: 33px;
+  font-weight: 700;
+  margin-block-end: 27.39px;
+  width: 1200px;
+}
+
+.container-our-mission p .space {
+  visibility: hidden;
+}
+
+.container-our-mission p .mission-info {
+  font-size: 22px;
+  font-weight: 700;
+  margin-block-start: 29.26px;
+  width: 1200px;
+}
+
+/* .container-our-mission h2, h4 {
+  background-color: black;
+  margin: 0;
+  width: 1200px;
+} */
+
+/* if i need to debug, remove this if needed */
+.container-monthly-tea {
+  /* width: 1000px; */
+  width: 100%;
+  /* display: contents; */
+  text-align: center;
+  /* justify-content: center; */
+  padding-right: 15px;
+}
+
+.marquee {
+  white-space: nowrap;
+  /* I would prefer to have the horizontal scroll invisible, but
+  the images get cut off. This will have to do for now. */
+  overflow: visible;
+  width: 100%;
+  animation: marquee 15s linear infinite;
+  position: relative;
+}
+
+.marquee-container img {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -750px;
+  }
+}
+
+.monthly-tea {
+  display: inline-flex;
+  /* flex-flow: wrap row; */
+  /* justify-content: center; */
+  margin-bottom: 65px;
+}
+
+.monthly-tea img {
+  width: 500px;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.image {
+  padding-right: 35px;
+}
+
+.image p {
+  font-weight: bold;
+  /* I wanted to add random rgb colors to the text, but not possible without js */
+  /* color: rgb(
+    Math.floor(Math.random() * 256),
+    Math.floor(Math.random() * 256),
+    Math.floor(Math.random() * 256)
+  ); */
+}
+
+.container-locations {
+  height: 500px;
+  background-image: url(../images/img-locations-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 50px;
+  width: auto;
+}
+
+.container-locations h2 {
+  padding-top: 50px;
+  text-shadow: 1px 1px black;
+}
+
+.container-locations h2:hover {
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
+.locations {
+  text-align: center;
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: center;
+  opacity: 1;
+}
+
+.locations ul {
+  padding-left: 0;
+  justify-content: center;
+}
+
+.locations li {
+  list-style-type: none;
+}
+
+.bergen,
+.bryggen,
+.nesttun {
+  background-color: black;
+  width: 300px;
+  flex-shrink: 1;
+}
+
+.bergen:hover,
+.bryggen:hover,
+.nesttun:hover {
+  background-color: gray;
+}
+
+.bergen h3:hover {
+  color: rebeccapurple;
+}
+
+.bryggen h3:hover {
+  color: cyan;
+}
+
+.nesttun h3:hover {
+  color: burlywood;
+}
+
+@media (max-width: 768px) {
+  .bergen,
+  .bryggen,
+  .nesttun {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 619px) {
+  .bergen,
+  .bryggen,
+  .nesttun {
+    font-size: 13px;
+  }
+}
+
+.bergen li,
+.bryggen li,
+.nesttun li {
+  padding-bottom: 5px;
+}
+
+.locations-padding {
+  padding: 0 20px;
+}
+
+footer {
+  text-align: center;
+  height: 200px;
+}
+
+.copyright {
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 470px) {
+  header nav {
+    visibility: hidden;
+  }
+  .container-our-mission {
+    margin: 0;
+  }
+
+  .container-locations {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+
+}

@@ -1,0 +1,18 @@
+body {
+  background-color: black;
+  color: rgb(183, 181, 181);
+}
+
+p {
+  padding-top: 800px;
+}
+
+kbd>kbd {
+  border-radius: 3px;
+  padding: 1px 2px 0;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+h2 {
+  padding-top: 800px;
+}
