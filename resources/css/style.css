@@ -37,7 +37,6 @@ header nav a {
   }
 }
 
-
 .header-ul {
   background-color: black;
   padding-left: 10px;
@@ -88,11 +87,23 @@ h4 {
   opacity: 0.75;
 }
 
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/varelaround/v20/w8gdH283Tvk__Lua32TysjIfp8uP.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 .container-our-mission p:hover {
-  opacity: 1;
-  background-color: black;
-  color: white;
-  font-size: larger;
+  opacity: .77;
+  transition: opacity 250ms ease-in-out;
+  background-color: rgb(252, 254, 255);
+  color: black;
+  font-family: 'Varela Round', Arial;
+  font-size: 30px;
+  transition: font-size 250ms ease-in-out;
 }
 
 .container-our-mission p .mission {
@@ -113,13 +124,11 @@ h4 {
   width: 1200px;
 }
 
-/* .container-our-mission h2, h4 {
-  background-color: black;
-  margin: 0;
-  width: 1200px;
-} */
+.wood-background {
+  background-image: url("../images/wood.jpg");
+  margin-bottom: 50px;
+}
 
-/* if i need to debug, remove this if needed */
 .container-monthly-tea {
   /* width: 1000px; */
   width: 100%;
@@ -127,6 +136,39 @@ h4 {
   text-align: center;
   /* justify-content: center; */
   padding-right: 15px;
+}
+
+@font-face {
+  font-family: "Wolf City";
+  src: url("../fonts/Wolf\ in\ the\ City.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Wolf City Light";
+  src: url("../fonts/Wolf\ in\ the\ City\ Light.ttf") format("truetype");
+}
+
+
+.container-monthly-tea h2 {
+  padding-top: 75px;
+  color: rgb(255, 255, 255);
+  opacity: .94;
+  font-family: 'Wolf City Light', Arial;
+  font-size: 160px;
+  font-weight: 50;
+  text-shadow: 1px 1px #444;
+  margin-bottom: 0px;
+}
+
+.container-monthly-tea h4 {
+  color: black;
+  opacity: .87;
+  color: rgb(254, 254, 254);
+  text-shadow: 0 1px black;
+  font-family: 'Noto Sans', Arial;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .marquee {
@@ -297,5 +339,4 @@ footer {
 }
 
 @media screen and (max-width: 1100px) {
-
 }
